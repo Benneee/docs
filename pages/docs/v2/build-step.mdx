@@ -18,10 +18,10 @@ export const meta = {
   title: 'Build Step',
   description: 'Providing ZEIT Now with a build step.',
   editUrl: 'pages/docs/v2/build-step.mdx',
-  lastEdited: '2019-08-16T15:05:32.000Z'
+  lastEdited: '2019-08-21T15:24:05.000Z'
 }
 
-When you make a deployment with ZEIT Now, the first step is the build step. Now recognizes a custom `build` script, with that build script outputting your app into the `public` directory.
+When you make a deployment with ZEIT Now, the first step is the build step. ZEIT Now recognizes a custom `build` script, with that build script outputting your app into the `public` directory.
 
 ZEIT Now also supports optimized frameworks that only need to be created and then they are ready to deploy with [Now CLI](/download) from the terminal.
 
@@ -29,7 +29,7 @@ You are also able to use [Environment Variables](#using-environment-variables-an
 
 ## Optimized Frameworks
 
-A variety of frameworks have been optimized for ZEIT Now. The following list contains those frameworks that have been optimized and what has been done to aid their performance only on Now. Any getting started method will immediately be ready to deploy with [Now CLI's `now` command](/download) from the terminal, or to be deployed with a [Git integration](/docs/v2/git-integration):
+A variety of frameworks have been optimized for ZEIT Now. The following list contains those frameworks that have been optimized and what has been done to aid their performance only on ZEIT Now. Any getting started method will immediately be ready to deploy with [Now CLI's `now` command](/download) from the terminal, or to be deployed with a [Git integration](/docs/v2/git-integration):
 
 | Framework        | Get Started Command                               | Optimized                 |
 | ---------------- | ------------------------------------------------- | ------------------------- |
@@ -49,7 +49,7 @@ A variety of frameworks have been optimized for ZEIT Now. The following list con
 
 ## Defining a Build Script
 
-To build your project, Now looks for a `build` script inside of a `package.json` file. By providing a build script, Now will build your project from fresh on every deployment.
+To build your project, ZEIT Now looks for a `build` script inside of a `package.json` file. By providing a build script, ZEIT Now will build your project from fresh on every deployment.
 
 For example, to build Next.js fresh, each time you deploy, the following `build` script should be placed in the `package.json`:
 
@@ -73,7 +73,7 @@ For example, to build Next.js fresh, each time you deploy, the following `build`
 
 To define an environment variable, you should use **Now Secrets**. By using **Now Secrets**, the data will be encrypted and stored securely, no longer directly accessible by anyone, and only exposed to deployments as environment variables.
 
-Adding **Now Secrets** can be done with [Now CLI](/now), providing three options to work with them.
+Adding **Now Secrets** can be done with [Now CLI](/download), providing three options to work with them.
 
 To **define a Now Secret**, use the following command:
 
@@ -123,7 +123,7 @@ Now, whenever the `process.env.VARIABLE_NAME` key is used, it will provide the a
 
 ## Ignored Files and Folders
 
-By default, Now ignores certain files and folders for security and performance reasons, preventing them from being uploaded during the deployment process.
+By default, ZEIT Now ignores certain files and folders for security and performance reasons, preventing them from being uploaded during the deployment process.
 
 ```bash
 .hg
@@ -152,7 +152,7 @@ CVS
 ```
 
 <Caption>
-  A complete list of files and folders ignored by Now during the deployment
+  A complete list of files and folders ignored by ZEIT Now during the deployment
   process.
 </Caption>
 
