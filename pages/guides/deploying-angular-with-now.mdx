@@ -59,7 +59,13 @@ After a successful scaffolding, `cd` into `my-new-app` directory and run the fol
 
 Your browser will automatically be launched with the served Angular app at <http://localhost:4200/>
 
-## Step 2: Deploy Your Angular Project with Now
+## Step 3: Install the 'serve' package using the following command: `npm install --save-dev serve`
+
+## Step 4: Update the script in package.json file:
+ "start": "serve dist/ --single",
+   "build": "ng build --prod",
+
+## Step 5: Deploy Your Angular Project with Now
 
 With your Angular application set up, it is ready to deploy live with [Now](/docs/v2).
 
